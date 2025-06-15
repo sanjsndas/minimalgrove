@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy - Minimal Grove</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<style>
+  /* CSS Reset & base */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #6b7280;
+    background: #bbf7d0;
+    background: linear-gradient(135deg, #bbf7d0 0%, #6ee7b7 100%);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    text-align: center;
+  }
+  .content-wrapper {
+    background: white;
+    max-width: 1000px;
+    margin: 48px auto 80px auto;
+    padding: 48px 36px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  a {
+    color: #111827;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover, a:focus {
+    color: #2563eb;
+    outline: none;
+  }
+  /* Container max width */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    text-align: left;
+  }
+  /* Header */
+  header {
+    position: sticky;
+    top: 0;
+    background-color: #ffffffcc;
+    backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid #e5e7eb;
+    z-index: 1000;
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+  .logo {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #111827;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    gap: 24px;
+  }
+  nav a {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 8px 4px;
+    position: relative;
+  }
+  nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #2563eb;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+    border-radius: 1px;
+  }
+  nav a:hover::after, nav a:focus::after {
+    width: 100%;
+  }
+  /* Mobile menu toggle */
+  .mobile-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #111827;
+  }
+  /* Main */
+  main {
+    margin-top: 48px;
+    text-align: left;
+  }
+  section {
+    padding-top: 64px;
+    padding-bottom: 80px;
+  }
+  h1, h2, h3 {
+    color: #111827;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p, li {
+    margin-bottom: 16px;
+    font-size: 1rem;
+    color: #4b5563;
+  }
+  ul {
+    margin-left: 24px;
+    margin-bottom: 24px;
+    color: #4b5563;
+  }
+  /* Footer */
+  footer {
+    background-color: #111827;
+    color: #d1d5db;
+    padding: 48px 24px;
+    text-align: center;
+    font-size: 1rem;
+  }
+  footer address {
+    font-style: normal;
+    line-height: 1.8;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  /* Responsive */
+  @media (max-width: 767px) {
+    .content-wrapper {
+      padding: 36px 24px;
+      margin: 32px 16px 56px 16px;
+    }
+    nav {
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="container header-inner" role="banner">
+      <a href="index.html" class="logo" aria-label="Minimal Grove Home">Minimal Grove</a>
+      <nav role="navigation" aria-label="Primary navigation">
+       <a href="index.html" tabindex="0">Home</a>
+        <a href="privacy.html" tabindex="0"aria-current="page">Privacy</a>
+        <a href="terms.html" tabindex="0">Terms & conditons</a>
+        <a href="cookies.html"tabindex="0">Cookies</a>
+        <a href="contact.html" tabindex="0">Contact us</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="privacy-policy" class="content-wrapper" aria-label="Privacy Policy">
+      <h1>Privacy Policy</h1>
+      
+      <h2>Introduction</h2>
+      <p>Welcome to Minimal Grove’s Privacy Policy page. We believe your privacy is fundamental and have created this detailed document to be transparent about how we manage your data. This policy covers everything from data collection to your rights, ensuring you understand and trust our approach. Our commitment extends beyond legal compliance to embody respect and care for your personal information.</p>
+      <p>As you interact with Minimal Grove through our website or consultancy services, your data may be collected and processed. This Privacy Policy explains what kind of data we collect, why we collect it, and how you can manage your data preferences effectively.</p>
+
+      <h2>Information We Collect</h2>
+      <p>We collect various kinds of data to provide and enhance our services. Personal data you provide includes your name, contact details, and communications, such as feedback or inquiries made via our website. Automatically collected data encompasses browsing behavior, IP addresses, device details, and usage statistics obtained through cookies and analytics tools.</p>
+      <p>This collection allows us to build a profile tailored to your preferences, improve functional aspects of our site, and maintain security. We do not gather sensitive personal data like financial or biometric information. Our practices are designed to respect your privacy and keep data collection minimal and purposeful.</p>
+
+      <h2>How We Use Your Information</h2>
+      <p>The information we collect powers multiple aspects of our service: responding to your requests, personalizing content, improving website performance, and safeguarding security. For example, your contact details facilitate effective communication while analytics data helps us understand user behavior to refine the site experience.</p>
+      <p>Marketing communication is sent only to users who opt-in and can be stopped anytime. We use your data judiciously and only to provide value, avoid misuse, and ensure that your interaction with Minimal Grove is positive and secure.</p>
+
+      <h2>Information Sharing and Disclosure</h2>
+      <p>We share your information only with trusted third-party service providers who assist us in operating our business, like hosting services and analytics platforms. These providers have strict confidentiality obligations and are prohibited from using your data beyond the contracted purpose.</p>
+      <p>Under legal obligations, we might disclose data as required by law enforcement or government agencies. We strive to protect your rights in all such instances.</p>
+
+      <h2>Your Rights and Choices</h2>
+      <p>Minimal Grove respects your privacy rights strongly. You can request access, correction, deletion of your personal information, or object to processing under certain conditions. Opting out of marketing communications is easy, and cookie preferences can be managed through browser controls.</p>
+      <p>We are committed to providing timely and transparent responses to all valid privacy requests, maintaining open communication to respect your choices completely.</p>
+
+      <h2>Cookies and Tracking Technologies</h2>
+      <p>Cookies enable us to enhance your site experience by remembering preferences and personalizing content. We use persistent and session cookies along with analytics technologies to monitor website usage and improve performance.</p>
+      <p>You can manage cookie preferences via your browser settings, but disabling cookies may affect certain site features or functionality.</p>
+
+      <h2>Data Security</h2>
+      <p>Our security measures include encryption of data transmission, secure server infrastructure, access controls, and employee training. We continuously monitor our systems for potential vulnerabilities and respond promptly to security incidents to limit impact.</p>
+      <p>Users should practice safe online behavior such as safeguarding passwords and reporting suspicious activity to further enhance security.</p>
+
+      <h2>Third-Party Links</h2>
+      <p>Links to external websites on Minimal Grove are provided for your convenience. We do not control these sites or their privacy practices; therefore, we encourage you to review their policies when visiting them. Minimal Grove is not responsible for any content or data handling off-site.</p>
+
+      <h2>Children’s Privacy</h2>
+      <p>Minimal Grove is not designed for children under 13. We do not intentionally collect personal information from children under 13 and take swift action upon discovery of any such collection.</p>
+      <p>Parents are encouraged to monitor children's Internet activities and contact us to request removal of information if applicable.</p>
+
+      <h2>Data Retention</h2>
+      <p>Your personal data will be retained only for as long as necessary to fulfill the purposes outlined in this policy, comply with legal obligations or resolve disputes. Data no longer needed is securely deleted or anonymized.</p>
+      <p>This practice minimizes exposure and aligns with data protection best practices.</p>
+
+      <h2>International Data Transfers</h2>
+      <p>Your data may be processed outside your home country. We ensure that cross-border transfers are safeguarded with appropriate legal guarantees and controls to maintain data privacy standards equivalent to your jurisdiction.</p>
+
+      <h2>Marketing Communications</h2>
+      <p>We only send marketing communications to users who provide explicit consent. You have full control and can withdraw consent anytime without affecting your access to our services.</p>
+
+      <h2>Policy Updates</h2>
+      <p>Privacy policies evolve with technology and legal changes. We regularly update this document and notify users of significant changes via our website or direct communication.</p>
+
+      <h2>Contact Information</h2>
+      <p>For any questions or assistance regarding your privacy or data, contact our Data Protection Officer:</p>
+      <address>
+        <strong>Minimal Grove</strong><br />
+        80 Washington Square E, New York, NY 10003, USA<br />
+        Email: <a href="mailto:privacy@minimalgrove.com">privacy@minimalgrove.com</a><br />
+        Phone: <a href="tel:+18665557666">+1 (866) 555-7666</a>
+      </address>
+
+      <!-- Additional Topics -->
+
+      <h2>Legal Basis for Processing</h2>
+      <p>Minimal Grove processes your personal data under several legal bases, including your consent, contractual necessity to provide services, compliance with legal obligations, and our legitimate interests to improve services. This ensures lawful and fair handling of your information with respect for your privacy rights.</p>
+
+      <h2>User Access and Portability</h2>
+      <p>You have the right to request a copy of your personal data in a portable format, allowing you to transfer your information to another service provider. This enhances your control over your information and supports data portability principles.</p>
+
+      <h2>Automated Decision Making</h2>
+      <p>Minimal Grove does not engage in automated decision-making or profiling that has legal or significant effects on individuals. Our data processing involves human review and oversight to ensure fairness and accuracy.</p>
+
+      <h2>Children’s Privacy Additional</h2>
+      <p>We encourage parents and guardians to educate children about online privacy and safety. Our website implements measures to avoid accidental data collection from children and comply with regulations like COPPA to protect minors.</p>
+
+      <h2>Cookies Management</h2>
+      <p>Our website offers options to manage cookie preferences, allowing you to accept, reject, or customize cookie usage according to your comfort. This aligns with privacy laws and user empowerment goals.</p>
+
+      <h2>Data Breach Response</h2>
+      <p>In the event of a personal data breach, Minimal Grove has a rigorous incident response plan including containment, assessment, notification to affected users and regulators, and remediation, focused on minimizing risk and protecting your data.</p>
+
+      <h2>Third-Party Services</h2>
+      <p>We rely on trusted third-party services for analytics, cloud hosting, and email delivery. These partners adhere to strict policies to protect your data and only process information as contracted.</p>
+
+      <h2>Cross-Border Data Protection</h2>
+      <p>Data transfers outside your country are governed by frameworks ensuring equivalent protection standards, including standard contractual clauses and international treaties, to maintain your privacy.</p>
+
+      <h2>Privacy Training</h2>
+      <p>Minimal Grove invests in ongoing privacy and security training for our team to ensure awareness and compliance with evolving best practices and legal standards.</p>
+
+      <h2>Your Data Responsibility</h2>
+      <p>You are encouraged to safeguard your account credentials and avoid sharing sensitive data with unauthorized parties. Reporting suspicious activities promptly helps maintain a secure environment for all users.</p>
+
+      <h2>Feedback and Improvements</h2>
+      <p>We welcome your feedback on our privacy practices and policies. Continuous improvement is a priority, and your input helps us better meet your privacy expectations.</p>
+    </section>
+  </main>
+  <footer role="contentinfo">
+    <address>
+      <strong>Minimal Grove</strong><br />
+      80 Washington Square E, New York, NY 10003, USA<br />
+      <a href="mailto:contact@minimalgrove.com" style="color: #bbf7d0;">contact@minimalgrove.com</a><br />
+      <a href="tel:+18665557666" style="color: #bbf7d0;">+1 (866) 555-7666</a>
+    </address>
+  </footer>
+</body>
+</html>
+

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cookies Policy - Minimal Grove</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<style>
+  /* CSS Reset */
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #bbf7d0 0%, #6ee7b7 100%);
+    color: #374151;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+  a:hover, a:focus {
+    text-decoration: underline;
+    outline: none;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    background-color: #ffffffcc;
+    backdrop-filter: saturate(180%) blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    height: 64px;
+    border-bottom: 1px solid #e5e7eb;
+    z-index: 10000;
+  }
+  .logo {
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: #111827;
+  }
+  nav {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  nav a {
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    padding: 4px 0;
+  }
+  nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #2563eb;
+    left: 0;
+    bottom: -2px;
+    transition: width 0.3s ease;
+    border-radius: 1px;
+  }
+  nav a:hover::after, nav a:focus::after {
+    width: 100%;
+  }
+  main {
+    max-width: 900px;
+    background: white;
+    margin: 48px auto 120px;
+    padding: 48px 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+  }
+  h1, h2, h3 {
+    color: #111827;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  h1 {
+    font-size: 2.75rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+  ol {
+    padding-left: 1.6rem;
+    margin-bottom: 3rem;
+  }
+  ol li {
+    margin-bottom: 2rem;
+  }
+  footer {
+    background-color: #111827;
+    color: #d1d5db;
+    text-align: center;
+    padding: 48px 24px;
+    font-size: 1rem;
+  }
+  footer address {
+    font-style: normal;
+    line-height: 1.8;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  /* Cookie consent dialog */
+  #cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(22, 101, 52, 0.95);
+    color: #bbf7d0;
+    padding: 16px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-size: 1rem;
+    z-index: 11000;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.15);
+  }
+  #cookie-consent p {
+    margin: 0;
+    flex: 1 1 300px;
+  }
+  #cookie-consent button {
+    background-color: #22c55e;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 28px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #064e3b;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  #cookie-consent button:hover, #cookie-consent button:focus {
+    background-color: #16a34a;
+    outline: none;
+  }
+  #cookie-consent button.decline {
+    background-color: #ef4444;
+    color: #7f1d1d;
+  }
+  #cookie-consent button.decline:hover,
+  #cookie-consent button.decline:focus {
+    background-color: #b91c1c;
+  }
+  @media (max-width: 600px) {
+    #cookie-consent {
+      flex-direction: column;
+      text-align: center;
+    }
+    #cookie-consent p {
+      flex: none;
+    }
+    #cookie-consent button {
+      width: 100%;
+      max-width: 320px;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <a href="index.html" class="logo" aria-label="Minimal Grove Home">Minimal Grove</a>
+  <nav role="navigation" aria-label="Primary navigation">
+   <a href="index.html" tabindex="0">Home</a>
+        <a href="privacy.html" tabindex="0">Privacy</a>
+        <a href="terms.html" tabindex="0">Terms & conditons</a>
+        <a href="cookies.html"tabindex="0"aria-current="page">Cookies</a>
+        <a href="contact.html" tabindex="0">Contact us</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Cookies Policy</h1>
+  <p>At Minimal Grove, we believe in transparency about how cookies and tracking technologies are used on our website. This comprehensive Cookies Policy explains in detail what cookies are, how we use them, the types of cookies we employ, and how you can control or disable cookies according to your preferences.</p>
+  <p>Your privacy matters, and understanding cookies helps you make informed decisions about your data when interacting with our site. This policy covers 40 detailed points related to cookies to ensure full clarity and compliance with data protection laws.</p>
+  <ol>
+    <li>
+      <h3>What Are Cookies?</h3>
+      <p>Cookies are small text files stored on your device when you visit a website. They allow the site to remember your preferences, login status, and other data to improve your browsing experience. Without cookies, many online services would be less efficient and less convenient.</p>
+      <p>Cookies do not contain malicious code or viruses and cannot access information from other files on your device.</p>
+    </li>
+    <li>
+      <h3>Types of Cookies We Use</h3>
+      <p>Minimal Grove uses various cookies including:</p>
+      <ul>
+        <li><strong>Strictly Necessary Cookies:</strong> Essential for website operation (e.g., login sessions).</li>
+        <li><strong>Performance Cookies:</strong> Collect anonymous data on how visitors use the site to help improve performance.</li>
+        <li><strong>Functionality Cookies:</strong> Remember user choices like language preferences or region.</li>
+        <li><strong>Advertising and Targeting Cookies:</strong> Deliver relevant ads and limit ad frequency.</li>
+      </ul>
+      <p>These help us provide a smooth and tailored user experience.</p>
+    </li>
+    <li>
+      <h3>How Cookies Enhance Your Experience</h3>
+      <p>Cookies remember your preferences, so you don’t have to set them again on each visit. They enable features like saved login sessions and region-specific content. Analytics cookies allow us to understand usage patterns and optimize site design and content for you.</p>
+      <p>Cookies also allow relevant and timely advertising, improving the overall experience without appearing repetitive or irrelevant.</p>
+    </li>
+    <li>
+      <h3>Cookies We Do Not Use</h3>
+      <p>Minimal Grove does not use cookies that collect sensitive personal information, nor do we use cookies for unlawful tracking or data resale. We never install cookies without user consent unless they are essential for our website functionality.</p>
+      <p>We exclude intrusive or third-party cookies that might invade your privacy beyond the scope of our services.</p>
+    </li>
+    <li>
+      <h3>Third-Party Cookies and Tracking</h3>
+      <p>Some services integrated on our site, such as analytics or video platforms, may set their own cookies. We ensure these third parties comply with legal standards and handle data responsibly. You can manage these through third-party opt-out tools or via your browser.</p>
+    </li>
+    <li>
+      <h3>Session vs Persistent Cookies</h3>
+      <p>Session cookies expire after you close your browser and do not remain stored on your device. Persistent cookies stay on your device for a predefined period or until you delete them. We use both kinds to balance convenience and privacy.</p>
+    </li>
+    <li>
+      <h3>How We Use Cookies for Analytics</h3>
+      <p>Analytical cookies gather anonymous aggregate data about visitor behavior, pages viewed, and time spent. This information helps us spot trends and improve the website’s functionality and content. We do not collect personally identifiable data in analytics.</p>
+    </li>
+    <li>
+      <h3>Advertising Cookies</h3>
+      <p>We use advertising cookies to show you ads that align with your interests and to measure campaign effectiveness. These cookies limit repeated impressions of the same ad to reduce annoyance.</p>
+      <p>Ad personalization enhances your experience but can be turned off if you prefer.</p>
+    </li>
+    <li>
+      <h3>How to Control Cookies</h3>
+      <p>You have full control over cookie settings via your web browser preferences. You can block or delete cookies, including selective settings for first and third-party cookies. Most browsers provide detailed instructions in help sections.</p>
+      <p>Note: Disabling some cookies may limit website features or require more frequent re-login.</p>
+    </li>
+    <li>
+      <h3>Cookie Consent on Our Website</h3>
+      <p>On your first visit, a cookie consent dialog will appear asking you to accept or decline non-essential cookies. Your choice is saved for future visits. You may change this preference anytime via the cookie settings option at the bottom of our pages.</p>
+    </li>
+    <li>
+      <h3>Legal Compliance and Cookies</h3>
+      <p>Minimal Grove complies with GDPR, CCPA, and other relevant data protection regulations governing cookie usage. We seek your informed consent where required and provide transparent information about our cookie practices.</p>
+    </li>
+    <li>
+      <h3>How Often We Update This Policy</h3>
+      <p>Our Cookies Policy is periodically updated to reflect changes in regulations, technology, or business practices. We recommend revisiting this page regularly to stay informed about how our use of cookies may affect you.</p>
+    </li>
+    <li>
+      <h3>Cookies on Mobile Devices</h3>
+      <p>Cookies function similarly on mobile and desktop devices. You can adjust cookie and privacy settings on mobile browsers or apps to control data collection in line with your preferences.</p>
+    </li>
+    <li>
+      <h3>Cookie Duration</h3>
+      <p>Every cookie has an expiration period, ranging from session (until browser close) to multiple years. We specify durations in our cookie files and only retain data as necessary.</p>
+    </li>
+    <li>
+      <h3>How We Store Cookie Data</h3>
+      <p>Cookie data is stored locally on your device and is accessible only by the site or third-party setting the cookie. We do not store cookie data on our servers except for session identification linked to user accounts with your consent.</p>
+    </li>
+    <li>
+      <h3>Security Measures for Cookies</h3>
+      <p>We set cookies with security flags such as Secure and HttpOnly where applicable to protect against unauthorized access. We avoid using cookies for storing sensitive personal information.</p>
+    </li>
+    <li>
+      <h3>Impact of Disabling Cookies</h3>
+      <p>Turning off cookies may lead to loss of personalization and require you to re-enter preferences on each visit. Some interactive features may become unavailable or less functional when cookies are disabled.</p>
+    </li>
+    <li>
+      <h3>How to Delete Cookies</h3>
+      <p>You can delete cookies via your browser's settings or options menu. Clearing cookies removes stored site preferences and temporary data but does not affect other browser data like bookmarks.</p>
+    </li>
+    <li>
+      <h3>Cookie Policy and Third Party Advertising</h3>
+      <p>Third-party ad networks may use cookies to show you targeted advertisements. We do not control these networks' cookie use but encourage you to review their own policies and opt-out options.</p>
+    </li>
+    <li>
+      <h3>Cookie Management Tools</h3>
+      <p>Various browser extensions and tools exist to help manage cookies more granularly than native browser settings. We suggest researching reputable options if desired.</p>
+    </li>
+    <li>
+      <h3>Do Not Track Signals</h3>
+      <p>Some browsers send Do Not Track signals to websites; however, support and compliance vary. Our website does not currently respond to such signals but respects user privacy choices via cookie consent.</p>
+    </li>
+    <li>
+      <h3>Cookies and Social Media Integration</h3>
+      <p>Social sharing buttons on our site may set cookies related to social media platforms. Such cookies are managed independently by those platforms.</p>
+    </li>
+    <li>
+      <h3>Cookies and Embedded Content</h3>
+      <p>Embedded videos, maps, or other media from third parties may set cookies or collect data. Please review those providers’ policies for details.</p>
+    </li>
+    <li>
+      <h3>Cookies Used for Site Performance</h3>
+      <p>We use cookies to monitor website uptime, loading speed, and detect errors. These cookies help maintain reliability and optimize your experience.</p>
+    </li>
+    <li>
+      <h3>Consent Withdrawal</h3>
+      <p>You may withdraw your cookie consent at any time by clicking the cookie settings link that appears persistently on our pages or by clearing your cookies.</p>
+    </li>
+    <li>
+      <h3>Cookies in Relation to User Accounts</h3>
+      <p>If you create an account on our site, cookies help keep you logged in and personalize your experience securely.</p>
+    </li>
+    <li>
+      <h3>Consent Storage Duration</h3>
+      <p>Your consent choice is stored in a cookie to avoid repeatedly prompting you. This cookie duration typically lasts 12 months unless changed or cleared.</p>
+    </li>
+    <li>
+      <h3>Cookie Policy Enforcement</h3>
+      <p>Minimal Grove monitors compliance with cookie regulations and updates policies as necessary to meet legal obligations fully.</p>
+    </li>
+    <li>
+      <h3>Cookies and Email Marketing</h3>
+      <p>Cookies help us track email campaign performance such as open rates and link clicks when you interact with our newsletters.</p>
+    </li>
+    <li>
+      <h3>Data Minimization</h3>
+      <p>We only collect cookie-related data necessary to fulfill stated purposes, avoiding excessive or irrelevant tracking.</p>
+    </li>
+    <li>
+      <h3>Cookie Consent for Children</h3>
+      <p>We do not knowingly gather cookie consent data from children under 13 and encourage parental supervision for minors accessing our site.</p>
+    </li>
+    <li>
+      <h3>Website Functionality Cookies</h3>
+      <p>Cookies that support login status, language preferences, and user-interface settings fall under this category to ensure seamless navigation.</p>
+    </li>
+    <li>
+      <h3>Third-Party Cookie Attribution</h3>
+      <p>Cookies set by third parties may be used for analytics, advertising, or social media integrations. We disclose these relationships and recommend reviewing their individual policies.</p>
+    </li>
+    <li>
+      <h3>Cookie Identification and Storage</h3>
+      <p>Cookies contain a unique identifier allowing websites to differentiate users or sessions. This identifier does not contain personal information but may reference data stored securely on our servers.</p>
+    </li>
+    <li>
+      <h3>Cookies for Personalization</h3>
+      <p>Cookies enable Minimal Grove to personalize content and product recommendations based on your browsing patterns and preferences.</p>
+    </li>
+    <li>
+      <h3>Policy on Persistent Cookies</h3>
+      <p>Persistent cookies remain stored for long periods to remember returning users and prevent repeated consent prompts.</p>
+    </li>
+    <li>
+      <h3>Enabling and Disabling Cookies</h3>
+      <p>Instructions to enable or disable cookies vary by browser; generally found in privacy or security settings. We encourage users to explore help sections for detailed guidance.</p>
+    </li>
+    <li>
+      <h3>Impact on Site Usage</h3>
+      <p>Disabling cookies may block access to certain features or degrade your browsing experience on Minimal Grove.</p>
+    </li>
+    <li>
+      <h3>Security of Cookie Data</h3>
+      <p>While cookies themselves carry minimal risk, we secure the data associated with cookie identifiers on our servers using encryption and strict access controls.</p>
+    </li>
+    <li>
+      <h3>Cookies and Compliance</h3>
+      <p>Our cookie practices comply with local and international privacy laws including GDPR and CCPA, providing you control and transparency.</p>
+    </li>
+    <li>
+      <h3>Cookie Policy Updates</h3>
+      <p>This policy may be updated periodically to reflect changes in practices, law, or technology. Updates are posted on this page with effective dates. Continued use of our site signifies acceptance.</p>
+    </li>
+    <li>
+      <h3>Contact for Cookie Concerns</h3>
+      <p>For questions or complaints about our cookie policies or data practices, please contact us at:</p>
+      <address>
+        Minimal Grove<br />
+        80 Washington Square E, New York, NY 10003, USA<br />
+        Email: <a href="mailto:privacy@minimalgrove.com">privacy@minimalgrove.com</a><br />
+        Phone: <a href="tel:+18665557666">+1 (866) 555-7666</a>
+      </address>
+    </li>
+  </ol>
+</main>
+
+<footer role="contentinfo">
+  <address>
+    <strong>Minimal Grove</strong><br />
+    80 Washington Square E, New York, NY 10003, USA<br />
+    <a href="mailto:contact@minimalgrove.com" style="color: #bbf7d0;">contact@minimalgrove.com</a><br />
+    <a href="tel:+18665557666" style="color: #bbf7d0;">+1 (866) 555-7666</a>
+  </address>
+</footer>
+
+<!-- Cookie consent dialog -->
+<div id="cookie-consent" role="dialog" aria-live="polite" aria-label="Cookie consent dialog" aria-modal="true" hidden>
+  <p>We use cookies to enhance your browsing experience, serve personalized content, and analyze site traffic. You can accept or decline cookies. To learn more, please review our <a href="cookies.html" style="color:#bbf7d0;">Cookies Policy</a>.</p>
+  <button id="accept-cookies" type="button" aria-label="Accept cookies">Accept</button>
+  <button id="decline-cookies" type="button" aria-label="Decline cookies" class="decline">Decline</button>
+</div>
+
+<script>
+  // Show cookie consent if not set
+  function setCookie(name, value, days) {
+    const expires = new Date(Date.now() + days*864e5).toUTCString();
+    document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + expires + '; path=/';
+  }
+  function getCookie(name) {
+    return document.cookie.split('; ').reduce((r, v) => {
+      const parts = v.split('=');
+      return parts[0] === name ? decodeURIComponent(parts[1]) : r
+    }, '');
+  }
+
+  function hideConsent() {
+    document.getElementById('cookie-consent').hidden = true;
+  }
+
+  function showConsent() {
+    document.getElementById('cookie-consent').hidden = false;
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const consent = getCookie('minimalgrove_cookie_consent');
+    if (consent === 'accepted' || consent === 'declined') {
+      hideConsent();
+    } else {
+      showConsent();
+    }
+
+    document.getElementById('accept-cookies').addEventListener('click', () => {
+      setCookie('minimalgrove_cookie_consent', 'accepted', 365);
+      hideConsent();
+      // Optional: Initialize analytics or personalization scripts here
+    });
+
+    document.getElementById('decline-cookies').addEventListener('click', () => {
+      setCookie('minimalgrove_cookie_consent', 'declined', 365);
+      hideConsent();
+      // Optional: Block analytics or personalization scripts here
+    });
+  });
+</script>
+</body>
+</html>

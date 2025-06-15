@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Terms of Service - Minimal Grove</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<style>
+  /* CSS Reset & base */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #6b7280;
+    background: #bbf7d0;
+    background: linear-gradient(135deg, #bbf7d0 0%, #6ee7b7 100%);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    text-align: center;
+  }
+  .content-wrapper {
+    background: white;
+    max-width: 1000px;
+    margin: 48px auto 80px auto;
+    padding: 48px 36px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  a {
+    color: #111827;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover, a:focus {
+    color: #2563eb;
+    outline: none;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    text-align: left;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    background-color: #ffffffcc;
+    backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid #e5e7eb;
+    z-index: 1000;
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+  .logo {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #111827;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  nav a {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 8px 4px;
+    position: relative;
+    white-space: nowrap;
+  }
+  nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #2563eb;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+    border-radius: 1px;
+  }
+  nav a:hover::after, nav a:focus::after {
+    width: 100%;
+  }
+  .mobile-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #111827;
+  }
+  main {
+    margin-top: 48px;
+    text-align: left;
+  }
+  section {
+    padding-top: 64px;
+    padding-bottom: 80px;
+  }
+  h1, h2, h3 {
+    color: #111827;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p, li {
+    margin-bottom: 16px;
+    font-size: 1.05rem;
+    color: #4b5563;
+  }
+  ul {
+    margin-left: 24px;
+    margin-bottom: 24px;
+    color: #4b5563;
+  }
+  /* Footer */
+  footer {
+    background-color: #111827;
+    color: #d1d5db;
+    padding: 48px 24px;
+    text-align: center;
+    font-size: 1rem;
+  }
+  footer address {
+    font-style: normal;
+    line-height: 1.8;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  @media (max-width: 767px) {
+    .content-wrapper {
+      padding: 36px 24px;
+      margin: 32px 16px 56px 16px;
+    }
+    nav {
+      gap: 16px;
+      justify-content: center;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="container header-inner" role="banner">
+      <a href="index.html" class="logo" aria-label="Minimal Grove Home">Minimal Grove</a>
+      <nav role="navigation" aria-label="Primary navigation">
+       <a href="index.html" tabindex="0">Home</a>
+        <a href="privacy.html" tabindex="0">Privacy</a>
+        <a href="terms.html" tabindex="0"aria-current="page">Terms & conditons</a>
+        <a href="cookies.html"tabindex="0">Cookies</a>
+        <a href="contact.html" tabindex="0">Contact us</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="content-wrapper" aria-label="Terms of Service">
+      <h1>Terms of Service</h1>
+
+      <h2>Acceptance of Terms</h2>
+      <p>By accessing or using Minimal Grove's services and website, you agree to comply with these Terms of Service, all applicable laws, and regulations. These terms represent the entire agreement between you and Minimal Grove with respect to the use of our site and services. You should review these Terms regularly as updates will be communicated through this page. If you disagree with any part, you must refrain from using our services immediately.</p>
+      <p>Acceptance of these terms is made either by clicking to accept where such option is provided, or by continued use of the website or services after notice of changes.</p>
+      <p>These terms apply whether you use the site as a guest or registered user and cover any content you submit, including feedback and messaging.</p>
+
+      <h2>Use of Services</h2>
+      <p>Minimal Grove provides digital content focused on gardening and related consultancy services. Users agree to use our content safely and responsibly in accordance with the law. You may not engage in activities that disrupt service operations, breach security, or violate intellectual property rights.</p>
+      <p>Users warrant they will not use our platform for unlawful purposes or to transmit harmful content. We reserve the right to investigate misuse or suspicious activity and to restrict or terminate access accordingly.</p>
+      <p>Our content is informational and intended to complement, not replace, professional horticultural advice.</p>
+
+      <h2>User Accounts and Registration</h2>
+      <p>To access certain features, you may be required to create an account. You are responsible for safeguarding your account details, including passwords. Notify us immediately if there is unauthorized access or misuse.</p>
+      <p>Accounts must be accurate, complete, and updated. We reserve the right to suspend or terminate accounts violating these Terms or engaging in harmful conduct.</p>
+      <p>You consent to receiving communications related to your use of the account and service updates.</p>
+
+      <h2>Intellectual Property Rights</h2>
+      <p>All materials available on Minimal Grove, including graphics, text, logos, and software, are protected under copyright, trademark, and other intellectual property laws. Except as expressly permitted, you may not use, reproduce, distribute, or create derivative works without written authorization.</p>
+      <p>Use of our trademarked logos or service marks requires prior written consent. Violations may result in legal action and loss of access rights.</p>
+
+      <h2>Content Disclaimer and Accuracy</h2>
+      <p>Content on Minimal Grove is provided for educational purposes only. While we strive for accuracy, we do not guarantee the completeness or reliability of any information. Consult professionals for specific advice tailored to your gardening needs or environmental conditions.</p>
+      <p>We disclaim liability for any loss or damage arising from reliance on our content. Use tips and consultation guidance at your discretion.</p>
+
+      <h2>User-Generated Content</h2>
+      <p>By submitting feedback, reviews, or other user-generated content, you grant Minimal Grove a worldwide, royalty-free, perpetual license to use, modify, distribute, or display such content. You affirm that your submissions do not infringe on third-party rights and are lawful.</p>
+      <p>We reserve the right to remove any submissions at our discretion, especially if they violate these Terms.</p>
+
+      <h2>Prohibited Conduct</h2>
+      <p>Users agree not to:</p>
+      <ul>
+        <li>Use the services for illegal or harmful purposes.</li>
+        <li>Post defamatory, abusive, or obscene content.</li>
+        <li>Attempt unauthorized access to accounts or systems.</li>
+        <li>Engage in activity that disrupts or degrades service quality.</li>
+      </ul>
+      <p>Violation can lead to immediate suspension or removal of privileges without notice.</p>
+
+      <h2>Third-Party Website Links</h2>
+      <p>Our platform may link to third-party sites for convenience or additional information. We are not responsible for their practices or content. Please review third-party terms and privacy policies before use.</p>
+
+      <h2>Privacy and Data Protection</h2>
+      <p>Your use of Minimal Grove is also governed by our Privacy Policy, which outlines how we collect and use your data. We encourage you to read that policy for full details.</p>
+
+      <h2>Limitation of Liability</h2>
+      <p>Minimal Grove and its affiliates shall not be liable for any direct, indirect, incidental, consequential, or special damages arising out of or relating to your use or inability to use the services, even if we have been advised of the possibility of such damages.</p>
+      <p>This limitation applies to all damages of any kind, whether based in contract, tort, or other legal theories.</p>
+
+      <h2>Indemnification</h2>
+      <p>You agree to indemnify and hold harmless Minimal Grove and its partners from any claims, damages, losses, liabilities, and expenses arising out of your violation of these Terms or your use of the services in violation of law.</p>
+
+      <h2>Termination</h2>
+      <p>We reserve the right to suspend or terminate your access to our website and services at any time and for any reason without prior notice. Upon termination, your rights to use the services immediately cease.</p>
+      <p>Termination will not affect obligations accrued prior to termination.</p>
+
+      <h2>Governing Law and Jurisdiction</h2>
+      <p>These Terms shall be governed by and construed in accordance with the laws of the State of New York, USA. Exclusive jurisdiction for any disputes lies with state and federal courts located in New York County.</p>
+      <p>You consent to personal jurisdiction in these courts and waive objections regarding venue.</p>
+
+      <h2>Modifications to Terms</h2>
+      <p>Minimal Grove may revise these Terms from time to time. We will post updated versions with effective dates. Continued use after changes signifies acceptance of the updated terms.</p>
+
+      <h2>Accessibility</h2>
+      <p>We strive to make our website and services accessible to all users, including those with disabilities. If you experience accessibility barriers, please contact us so we may address your concerns.</p>
+
+      <h2>Disclaimer of Warranties</h2>
+      <p>The services are provided “as is” without warranties of any kind, either express or implied, including but not limited to merchantability, fitness for a particular purpose, or non-infringement. We do not guarantee uninterrupted or error-free service.</p>
+
+      <h2>Force Majeure</h2>
+      <p>Minimal Grove is not liable for delays or failures caused by circumstances beyond our reasonable control, including natural disasters, strikes, cyber-attacks, or governmental actions.</p>
+
+      <h2>Severability</h2>
+      <p>If any provision of these Terms is held invalid or unenforceable, the remainder shall continue in full force as permitted by law.</p>
+
+      <h2>Entire Agreement</h2>
+      <p>These Terms, along with our Privacy Policy and other legal notices, constitute the entire agreement between you and Minimal Grove relating to your use of our services and supersede all prior agreements.</p>
+
+      <h2>Contact Information</h2>
+      <p>For questions or concerns about these Terms, please contact us:</p>
+      <address>
+        <strong>Minimal Grove</strong><br />
+        80 Washington Square E, New York, NY 10003, USA<br />
+        Email: <a href="mailto:support@minimalgrove.com">support@minimalgrove.com</a><br />
+        Phone: <a href="tel:+18665557666">+1 (866) 555-7666</a>
+      </address>
+
+      <h2>Feedback and Suggestions</h2>
+      <p>We welcome your feedback on our Terms of Service. Your input allows us to improve our policies and enhance your experience with Minimal Grove. Please reach out via email or phone as provided above.</p>
+
+      <h2>Additional User Responsibilities</h2>
+      <p>As a user, you agree to provide truthful and accurate information when interacting with our site and services. You are responsible for safeguarding your account and for any activities occurring under your credentials.</p>
+      <p>Sharing of account passwords or unauthorized account use is prohibited.</p>
+
+      <h2>Electronic Communications Consent</h2>
+      <p>By using our services, you consent to receive electronic communications from Minimal Grove such as emails and notices. These communications are part of your relationship with us and can include transactional and promotional messages if you opt in.</p>
+
+      <h2>Third-Party Intellectual Property</h2>
+      <p>You may encounter third-party content on our site. Respect all intellectual property rights and do not use third-party content without permission.</p>
+
+      <h2>Dispute Resolution</h2>
+      <p>We encourage amicable resolution of disputes through direct communication. For unresolved conflicts, you agree to binding arbitration in New York and waive any class-action rights.</p>
+
+      <h2>Legal Compliance</h2>
+      <p>Users must comply with all local, state, federal, and international laws applicable to their use of Minimal Grove services.</p>
+
+      <h2>User-Provided Content License</h2>
+      <p>By posting content, you grant Minimal Grove a perpetual, royalty-free, worldwide license to use, reproduce, modify, and distribute content for business purposes.</p>
+
+      <h2>Limitation on Use</h2>
+      <p>You agree not to use our services to transmit content that is illegal, infringing, defamatory, harmful, or invasive of others’ rights.</p>
+
+      <h2>Modification and Suspension of Services</h2>
+      <p>We reserve the right to modify, suspend, or discontinue any part of our services temporarily or permanently without liability or prior notice.</p>
+
+      <h2>License to Use Website</h2>
+      <p>Minimal Grove grants you a limited, non-exclusive, non-transferable license to access and use the website and content for personal, non-commercial use.</p>
+
+      <h2>Indemnification Clause</h2>
+      <p>You agree to indemnify Minimal Grove and its affiliates from any losses, damages, or expenses arising from your violation of these Terms or misuse of our services.</p>
+
+      <h2>Termination of Access</h2>
+      <p>We may terminate or restrict your access for breach of terms or for any reason at our discretion without liability.</p>
+
+      <h2>No Waiver</h2>
+      <p>Failure to enforce any part of these Terms does not constitute a waiver of rights to enforce them later.</p>
+
+      <h2>Survival</h2>
+      <p>Sections relating to liability, indemnification, and dispute resolution shall survive termination of these Terms.</p>
+    </section>
+  </main>
+  <footer role="contentinfo">
+    <address>
+      <strong>Minimal Grove</strong><br />
+      80 Washington Square E, New York, NY 10003, USA<br />
+      <a href="mailto:contact@minimalgrove.com" style="color: #bbf7d0;">contact@minimalgrove.com</a><br />
+      <a href="tel:+18665557666" style="color: #bbf7d0;">+1 (866) 555-7666</a>
+    </address>
+  </footer>
+</body>
+</html>
+
